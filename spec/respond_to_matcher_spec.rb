@@ -24,6 +24,6 @@ RSpec.describe HotChocolate do
     expect(subject).to respond_to(:purchase).with(1).arguments
   end
 
-  it { is_expected.to respond(:purchase, :discard) }
-  it { is_expected.to respond(:purchase).with(1).arguments }
+  it { is_expected.to respond_to(:purchase, :discard) }
+  it { is_expected.to respond_to(:purchase).with(1).arguments }
 end
